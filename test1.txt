@@ -1,0 +1,26 @@
+1.SELECT * FROM Workers 
+2.SELECT * FROM School WHERE first_name='Andry'
+3.SELECT first_name, second_name FROM School
+4.SELECT * FROM School WHERE rank='global'
+5.SELECT first_name, second_name FROM Work WHERE salary > 10000
+6.SELECT * FROM jigan WHERE department_id = 50 AND salary > 4000
+7.SELECT sum(money) FROM School WHERE work='school' AND age > 25 AND salary < 50000
+8.SELECT AVG(age) FROM Office
+9.SELECT Apple (SELECT MAX(price) FROM Shop
+10.SELECT * FROM jigan WHERE first_name LIKE '%a'
+11.
+12.SELECT Sclad (SELECT MIN(tovar) FROM Shop
+13.DELIMITER 
+CREATE PROCEDURE get_jigan (jigan_cnn VARCHAR(45))
+BEGIN
+    SELECT jigan FROM customers WHERE jigan = jigan_cnn;
+END 
+DELIMITER
+14.SELECT sotr FROM Jobs GROUP BY dolsh WHERE salary > 37000 AND age > 30 
+15.CREATE TABLE Director
+(
+    id INT PRIMARY KEY,
+    age INT,
+    first_name VARCHAR(40),
+    last_name VARCHAR(50)
+)
